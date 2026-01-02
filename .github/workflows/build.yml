@@ -1,3 +1,4 @@
+
 name: Build APK
 on: [push, workflow_dispatch]
 jobs:
@@ -15,4 +16,3 @@ jobs:
         with:
           name: Connecta-APK
           path: build/app/outputs/flutter-apk/app-release.apk
-          
