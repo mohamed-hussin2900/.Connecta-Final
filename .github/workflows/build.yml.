@@ -1,5 +1,5 @@
 name: Build APK
-on: [push]
+on: [push, workflow_dispatch] # أضفت هذا السطر لتفعيل التشغيل اليدوي
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,7 +13,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
-          name: Connecta-APK
+          name: Connecta-Final-APK
           path: build/app/outputs/flutter-apk/app-release.apk
-
-
